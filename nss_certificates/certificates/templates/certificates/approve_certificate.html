@@ -1,0 +1,18 @@
+{% extends "certificates/base.html" %}
+{% block content %}
+  <h2>Approve Certificates</h2>
+  <ul>
+    {% for cert in certificates %}
+      <li>
+        {{ cert.student.user.username }} - 
+        {% if cert.approved %}
+          ✅ Approved
+        {% else %}
+          <a href="{% url 'approve_certificate' cert.id %}">Approve</a>
+        {% endif %}
+      </li>
+    {% empty %}
+      <li>No certificates uploaded yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
