@@ -19,7 +19,7 @@ The **NSS Certificate Management System** is a web-based Django application that
 ## **Installation & Setup**
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-repo/nss-certificate-system.git
+git clone https://github.com/0xsreejith/NSS-Certificate-Portal.git
 cd nss-certificate-system
 ```
 
